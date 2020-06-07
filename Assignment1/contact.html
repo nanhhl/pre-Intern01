@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact</title>
+        <style>
+            .container{
+                width: 100%;
+                height: 100%;
+            }
+            /* header section */
+            .header{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                margin: 0;
+                width: 100%;
+                height: 23%;
+                background-color: darkblue;
+            }
+
+            .header h4{
+                color: yellow;
+                text-align: center;
+                font-size: 25px;
+                margin-top: 15px;    
+                margin-bottom: 8px;
+                padding-left: 100px;
+                width: 80%;
+            }
+
+            .header div{
+                float: left;
+            }
+
+            .logo{
+                width: 30%;
+                height: 100%;
+                position: relative;
+            }
+
+            .logo img{
+                position: absolute;
+                right: 220px;
+            }
+
+            .title {
+                width: 40%;
+                height: 100%;
+            }
+            .title h5{
+                font-size: 1.25rem;
+                font-weight: 500;
+                text-align: center;
+                color: yellow;
+                margin : 0px;
+            }
+            .logo2{
+                width: 30%;
+                height: 100%;
+            }
+
+            /*  navbar section */
+            .navbar{
+                position: absolute;
+                top: 150px;
+                left: 0;
+                height: 5%;
+                width: 100%;
+                background-color: white;
+            }
+            .navbar ul{
+                list-style: none;
+                margin-left: 100px;
+            }
+            li a{
+                float: left;
+                padding-right: 80px;
+                text-decoration: none;
+                color: black;
+            }
+
+            /* contact section */
+            .body{
+                width: 100%;
+            }
+            .contact{
+                position: absolute;
+                padding: 20px;
+                margin-left: 120px;
+                width: 40%;
+                margin-top: 200px;
+                margin-bottom: 100px;
+            }
+
+            /* intouch */
+            .touch{
+                position: absolute;
+                padding: 20px;
+                margin-left: 850px;
+                width: 30%;
+                top: 250px;
+                line-height: 50px;
+            }
+            .form{
+                position: absolute;
+                width: 70%;
+            }
+            #name,#email,#sub,#message{
+                position: absolute;
+                width: 100%;
+                height: 8%;
+            }
+
+            /* footer section */
+            .footer{
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color:darkblue;
+                color: yellow;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- header  -->
+            <div class="header">
+                <h4>University Journal of ICT in Multidisciplinary Issues on Arts & Science,</h4>
+                <div class="logo">
+                    <img src="photo/logo.jpg" width="20%">
+                </div>
+                <div class="title">
+                    <h5>Engineering, Economics and Education (Volume-1)</h5>
+                </div>
+                <div class="logo2">
+                    <img src="photo/logo1.png" width="45%">
+                </div>
+            </div>
+
+            <!-- navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Topic</a></li>
+                    <li><a href="#">Call For Papers</a></li>
+                    <li><a href="#">Editorial Board</a></li>
+                    <li><a href="#">Download Session</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- mainbody -->
+            <div class="body">
+                <!-- contact -->
+                <div class="contact">
+                   <h2>Contact Us</h2>
+                   <hr style="text-decoration-style: dashed;"> 
+                   <p>
+                        Tel : +95 9-794065357,9-421037973<br>
+                        Email : journal@ucsh.edu.mm<br>
+                        Website : ujim-ucsh.org
+                   </p>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60830.2045723122!2d95.44041053864255!3d17.655473000000008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x840980a557818237!2sUniversity%20of%20Computer%20Studies!5e0!3m2!1sen!2smm!4v1590511461898!5m2!1sen!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <!-- intouch -->
+                <div class="touch">
+                    <h2>Get in Touch</h2>
+                    <form class="form">
+                        <label for="name">Your Name (required)</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Your Email (required)</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="sub">Subject</label><br>
+                        <input type="text" id="sub" name="sub"><br>
+                        <label for="message">Your Message</label><br>
+                        <input type="text" id="message" name="message"><br>
+                        <button>Send</button>
+                    </form> 
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <h5>© UJIM - 2020</h5>
+            </div>
+        </div>
+    </body>
+</html>

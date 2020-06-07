@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UJIM</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- header  -->
+            <div class="header">
+                <h4>University Journal of ICT in Multidisciplinary Issues on Arts & Science,</h4>
+                <div class="logo">
+                    <img src="photo/logo.jpg" width="20%">
+                </div>
+                <div class="title">
+                    <h5>Engineering, Economics and Education (Volume-1)</h5>
+                </div>
+                <div class="logo2">
+                    <img src="photo/logo1.png" width="45%">
+                </div>
+            </div>
+
+            <!-- navbar -->
+            <div class="navbar">
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Topic</a></li>
+                    <li><a href="#">Call For Papers</a></li>
+                    <li><a href="#">Editorial Board</a></li>
+                    <li><a href="#">Download Session</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- image slider -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="photo/background2.jpg" style="width:100%; height: 500px;">
+                    </div>                
+                    <div class="mySlides fade">
+                      <img src="photo/background1.jpg" style="width:100%; height: 500px;">
+                    </div>                             
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>               
+                </div>
+            <br>
+
+            <!-- script  -->
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+            </script>
+                
+            <!-- content -->
+            <div class="content">
+                <!-- title  -->
+                <div class="content_title">
+                    <h2>“ICT in Multidisciplinary”</h2>
+                    <p style="text-align: center; margin-left: 200px; margin-right: 200px;">Foster to explore the new contributions of the heterogeneous subjects engaged with ICT, as consequences motivate researchers around the universities to come out new research ideas on their professional.</p>
+                </div><br>
+                <div class="area">
+                    <!-- left col area   -->
+                    <div class="left_area">
+                        <h4 style="text-align: left; color: rgb(197, 17, 17);">Area Of Interest</h4>
+                        <hr>
+                        <h5>Computer Science and Technology</h5>
+                            <ul>
+                                <li>Natural Language Processing</li>
+                                <li>Distributed Computing</li>
+                                <li>Artificial Intelligence</li>
+                                <li>Cloud Computing</li>
+                                <li>Data Science</li>
+                                <li>Image and Digital Signal Processing</li>
+                                <li>Software Engineering and web Engineering</li>
+                                <li>Database Management System and Information Retrieval</li>
+                                <li>Embedded System and Internet of Things (IOT)</li>
+                                <li>Networking and Security</li>
+                            </ul>
+                        <h5>Arts & Sciencesy</h5>
+                        <ul>
+                            <li> Natural Language Processing</li>
+                            <li>Parallel Distributed Computing</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Cloud Computing</li>
+                            <li>Data Science</li>
+                            <li>Image and Digital Signal Processing</li>
+                            <li>Software Engineering and web Engineering</li>
+                            <li>Database Management System and Information Retrieval</li>
+                            <li>Embedded System and Internet of Things (IOT)</li>
+                            <li>Networking and Security</li>
+                        </ul>
+                        <h5>International Relations</h5>
+                            <ul class="listyle">
+                                <li>International Relations</li>
+                                <li>International Relations related in ICT</li>
+                            </ul>
+                        <h5>Laws related in ICT</h5>
+                            <ul class="listyle">
+                                <li>Intellectual Property</li>
+                            </ul>
+                        
+                        <h5>Engineering</h5>
+                            <ul class="listyle">
+                                <li>Electronic and Electrical Engineering</li>
+                                <li>Electrical Power</li>
+                                <li>Information Technology</li>
+                                <li>Chemical Engineering</li>
+                            </ul>
+                        <h5>Economics</h5>
+                        <h5>Education</h5> 
+                    </div>
+
+                    <!-- download -->
+                    <div style="position: absolute; width: 32%; text-align: center; margin-left: 150px; margin-top: 1200px; margin-bottom: 9%; background-color: cornflowerblue;">
+                        <p>Download Session</p>
+                    </div>
+
+                    <!-- right col area  -->
+                    <div class="right_area">
+                        <h4 style="text-align: left; color: black;">Editorial Chair<br>
+                            Dr . Yuzana</h4>
+                        <hr>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td style="font-weight: bold;">Editorial Board</td style="font-size: bold;">
+                                    <td style="padding-left: 50px";>Dr.Soe Soe Aye</td>
+                                </tr>
+                                <tr>
+                                    <td>Thitinan Pongsudhirank</td>
+                                    <td style="padding-left: 50px";>Dr.Tin Zaw Thaw</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Kenki Adachi</td>
+                                    <td style="padding-left: 50px";>Dr.Hlaing Htake Khaung Tin</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Zaw Zaw Aung</td>
+                                    <td style="padding-left: 50px";>Dr.Naw Wai Wai Sin</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Marlar</td>
+                                    <td style="padding-left: 50px";>Daw Myo Myo Khin</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Nilar Myint Htoo</td>
+                                    <td style="padding-left: 50px";>Daw Nyunt Nyunt Htwe</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Thidar</td>
+                                    <td style="padding-left: 50px";>Daw Nu Nu Win</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Nilar Aung</td>
+                                    <td rowspan="5" style="padding-left: 30px;">
+                                        <table  class="table_contact">
+                                            <tr><th colspan="2">Contact Person</th></tr>
+                                            <tr><td>Dr.Yuzana</td><td>Dr.Tin Zar Thaw</td></tr>
+                                            <tr><td>09-794065357</td><td>09-421037973</td></tr>
+                                            <tr><td colspan="2">Contact mail:journal@ucsh.edu.mm</td></tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Ye Kyaw Thu</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Yin Myo Thu</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Soe Moe Tun</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Kay Thwe Hlaing</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Moe Thandar Kyi</td>
+                                </tr>
+                                <tr>
+                                    <td>Dr.Win Zaw</td>
+                                </tr> 
+                            </table>
+                        </div> 
+                    </div><!--right col area-->
+                   
+                    <!-- right para-->
+                    <div class="para ">
+                        <p>&nbsp;&nbsp;</p>
+                        <h3 style="color: darkred;">SUBMISSION OF PAPERS</h3>
+                        <div class="pg">
+                            <p>Authors are invited to submit the RESEARCH paper about 6 pages in Microsoft Word file formula as attached all manuscripts will be peer-reviewed by the Technical Program Committee and Editorial Board. The paper must submit your paper through 
+                                <span style="font-weight: bold">email: journal@ucsh.edu.mm </span>
+                                Template of paper can be download from the site: 
+                                <span style="font-weight:bold">ujim-ucsh.org </span>
+                            </p>
+                        </div>
+                        <h3 style="color: darkred;">IMPORTANT DATES</h3>
+                        <p class="pg1" style="font-weight:bold ;">
+                            Deadline: 9 May 2020<br>
+                            Revised: 27 May 2020<br>
+                            Deadline for Camera Ready: 29 May 2020 
+                        </p>
+                        <h3 style="color: darkred;">REGISTRATION FEES</h3>
+                        <h2 style="color: rgb(253, 42, 42); font-size: 15px; font-weight: bold;text-align: left;">Last Date of Registration: 6 June 2020 </h3>
+                        <p class="pg2" style="font-weight: bold;">
+                            Registration Fees: 20000 Kyats<br>
+                            Account: KBZ Bank Account No. 01830201800911901<br>
+                            All Accepted paper will be published and UJIM proceedings will be provided for each author. 
+                        </p>
+                        <p style="text-decoration: none; padding-top: 20px;padding-bottom: 70px;" >
+                            For paper template, Click here <a href="">(.docx)</a> and <a href="">(.pdf)</a> <br>
+                            For copyright agreement, Click here  <a href="">(.docx)</a> and <a href="">(.pdf)</a> <br>
+                            For ERC recommendation, Click here  <a href="">(.docx)</a> and <a href="">(.pdf)</a> <br>
+                            For rector recommendation, Click here <a href="">(.docx)</a> and <a href="">(.pdf)</a><br>
+                            For admission,Click here  <a href="">(.docx)</a> and <a href="">(.pdf)</a><br>
+                        </p>
+                    </div>
+                </div>    <!-- area-->
+            </div>  <!--content-->
+
+            <!-- footer  -->
+            <div class="footer">
+                <h5>© UJIM - 2020</h5>
+            </div>
+
+        </div>
+    </body>
+</html>
